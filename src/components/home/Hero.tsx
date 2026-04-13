@@ -64,11 +64,11 @@ export function Hero() {
                 className="w-full h-auto object-cover"
                 priority
               />
-              {/* Badge flottant */}
-              <div className="absolute bottom-4 left-4 flex items-center gap-2 rounded-full bg-white/95 backdrop-blur-sm px-4 py-2 shadow-lg">
-                <span className="text-lg">✨</span>
-                <span className="text-sm font-semibold text-foreground">
-                  Exemple de kit personnalisé
+              {/* Badge flottant — petit, discret */}
+              <div className="absolute bottom-3 left-3 flex items-center gap-1.5 rounded-full bg-white/90 backdrop-blur-sm px-2.5 py-1 shadow-md">
+                <span className="text-xs">✨</span>
+                <span className="text-xs font-medium text-muted-foreground">
+                  Exemple de kit
                 </span>
               </div>
             </div>

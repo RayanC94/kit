@@ -78,14 +78,16 @@ export function DeliveryGuarantee() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-3 mb-8">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 mb-8">
             {deliveryItems.map((item) => (
-              <div key={item.title} className="rounded-2xl border bg-white p-6 shadow-sm">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 mb-4">
+              <div key={item.title} className="rounded-2xl border bg-white p-5 shadow-sm flex flex-row sm:flex-col items-start gap-4">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary/10">
                   <item.icon className="h-5 w-5 text-primary" />
                 </div>
-                <h3 className="font-bold text-foreground mb-2">{item.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+                <div>
+                  <h3 className="font-bold text-foreground mb-1">{item.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+                </div>
               </div>
             ))}
           </div>
